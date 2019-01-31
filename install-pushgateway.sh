@@ -30,12 +30,7 @@ After=network-online.target
 User=pushgateway 
 Group=pushgateway 
 Type=simple
-ExecStart=/usr/local/bin/pushgateway \ 
-	--web.listen-address=":9091" \
-	--web.telemetry-path="/metrics" \ 
-	--persistence.file="/var/lib/pushgateway/" \
-    --persistence.interval=5m
-
+ExecStart=/usr/local/bin/pushgateway --persistence.file="/var/lib/pushgateway/"
 
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/pushgateway.service
