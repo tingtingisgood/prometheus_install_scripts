@@ -1,7 +1,7 @@
 #!/bin/bash 
 GOLANG_WEB_SERVER_VERSION="0.1.0" 
-#wget https://github.com/yangtinngting/golang_web_server/releases/download/v${GOLANG_WEB_SERVER_VERSION}/golangWebServer-${GOLANG_WEB_SERVER_VERSION}.darwin.amd64.tar.gz 
-#tar -xzvf golangWebServer-${GOLANG_WEB_SERVER_VERSION}.darwin.amd64.tar.gz 
+wget https://github.com/yangtinngting/golang_web_server/releases/download/v${GOLANG_WEB_SERVER_VERSION}/golangWebServer-${GOLANG_WEB_SERVER_VERSION}.linux.amd64.tar.gz 
+tar -xzvf golangWebServer-${GOLANG_WEB_SERVER_VERSION}.linux.amd64.tar.gz 
 cd golang_web_server/ 
 
 # if you just want to start prometheus as root 
